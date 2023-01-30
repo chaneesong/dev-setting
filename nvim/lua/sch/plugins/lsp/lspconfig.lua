@@ -62,13 +62,28 @@ lspconfig["html"].setup({
   on_attach = on_attach,
 })
 
--- configure typescript server with plugin
-typescript.setup({
-  server = {
-    capabilities = capabilities,
-    on_attach = on_attach,
+lspconfig["pyright"].setup({
+  python = {
+    analysis = {
+      autoSearchPaths = true,
+      diagnosticMode = "workspace",
+      useLibraryCodeForTypes = true,
+    },
   },
 })
+
+lspconfig["tsserver"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure typescript server with plugin
+-- typescript.setup({
+--   server = {
+--     capabilities = capabilities,
+--     on_attach = on_attach,
+--   },
+-- })
 
 -- configure css server
 lspconfig["cssls"].setup({

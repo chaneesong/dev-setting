@@ -58,7 +58,8 @@ return packer.startup(function(use)
 
   -- fuzzy finding w/ telescope
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
-  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "cljoly/telescope-repo.nvim" } }) -- fuzzy finder
+  use("nvim-telescope/telescope-project.nvim")
 
   -- autocompletion
   use("hrsh7th/nvim-cmp") -- completion plugin
@@ -100,6 +101,10 @@ return packer.startup(function(use)
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+
+  -- etc
+  use("lukas-reineke/indent-blankline.nvim") -- indent guides
+  use("mhinz/vim-startify") -- change vim start screen
 
   if packer_bootstrap then
     require("packer").sync()

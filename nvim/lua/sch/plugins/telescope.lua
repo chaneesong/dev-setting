@@ -22,6 +22,20 @@ telescope.setup({
       },
     },
   },
+  extensions = {
+    repo = {
+      list = {
+        fd_opts = {
+          "--no-ignore-vcs",
+        },
+        search_dirs = {
+          "~/projects/",
+        },
+      },
+    },
+  },
 })
 
 telescope.load_extension("fzf")
+telescope.load_extension("project")
+telescope.load_extension("repo")
