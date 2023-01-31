@@ -16,6 +16,10 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
+-- normal mode settings
+keymap.set("n", "<leader>w", "$")
+keymap.set("n", "<leader>q", "^")
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement
@@ -39,7 +43,10 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>te", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>tq", ":NvimTreeClose<CR>") -- close file explorer
+keymap.set("n", "<leader>tr", ":NvimTreeCollapse<CR>") -- collaosing file browser
+keymap.set("n", "<leader>tf", ":NvimTreeFocus<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
