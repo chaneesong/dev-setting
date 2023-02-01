@@ -366,7 +366,7 @@ set -g mode-keys vi
 
 # move status line to top
 #set -g status-position top
-bind | split-window -h
+bind '\' split-window -h
 bind -r m resize-pane -Z
 
 # -- tpm -----------------------------------------------------------------------
