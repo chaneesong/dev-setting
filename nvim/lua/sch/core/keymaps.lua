@@ -9,6 +9,7 @@ local keymap = vim.keymap -- for conciseness
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
+keymap.set("i", "kj", "<ESC>")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
@@ -16,9 +17,16 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
+-- insert mode settings
+keymap.set("i", "<C-s>", "<C-c>:w<CR>")
+
 -- normal mode settings
-keymap.set("n", "<leader>w", "$")
 keymap.set("n", "<leader>q", "^")
+keymap.set("n", "<leader>w", "$")
+
+-- visual mode settings
+keymap.set("v", "<leader>q", "^")
+keymap.set("v", "<leader>w", "$")
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
