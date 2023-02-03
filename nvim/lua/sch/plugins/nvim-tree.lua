@@ -24,6 +24,14 @@ nvimtree.setup({
       },
     },
   },
+  view = {
+    width = 30,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
+    },
+  },
   -- disable window_picker for
   -- explorer to work well with
   -- window splits
