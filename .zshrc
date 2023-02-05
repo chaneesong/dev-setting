@@ -24,8 +24,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
   autojump
   asdf
   tmux
@@ -48,19 +46,30 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# alias ls -> lsd
+# command ls -> lsd
 alias ls='lsd'
 alias ll='ls -alhF'
 alias lla='ls -al'
 alias lt='ls --tree'
 
-# alias vim -> nvim
+# command vim -> nvim
 alias vim='nvim'
 alias vi='vim'
 alias vimdiff='nvim -d'
 export EDITOR=/usr/local/bin/nvim
 
-source /Users/sch/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# tmux command
+alias t='tmux'
+alias tn='~/dev/shell-script/tmux/new_session.sh'
+alias ta='tmux a #'
+alias td='tmux detach'
+alias tan='~/dev/shell-script/tmux/attach_session.sh'
+alias tl='tmux ls'
+alias tk='~/dev/shell-script/tmux/kill_session.sh'
+
+# zsh input packages
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
