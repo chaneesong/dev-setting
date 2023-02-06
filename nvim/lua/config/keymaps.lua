@@ -12,7 +12,13 @@ keymap.set("n", "<leader>[", "^") -- move to forward in a current line
 keymap.set("n", "<leader>]", "$") -- move to backword in a current line
 keymap.set("n", "<leader>a", "gg^vG$") -- select all
 
+-- move to window
 keymap.set("n", "<C-h>", "<CMD>TmuxNavigateLeft<CR>")
-keymap.set("n", "<C-j>", "<CMD>:TmuxNavigateDown<CR>")
-keymap.set("n", "<C-k>", "<CMD>:TmuxNavigateUp<CR>")
-keymap.set("n", "<C-l>", "<CMD>:TmuxNavigateRight<CR>")
+keymap.set("n", "<C-j>", "<CMD>TmuxNavigateDown<CR>")
+keymap.set("n", "<C-k>", "<CMD>TmuxNavigateUp<CR>")
+keymap.set("n", "<C-l>", "<CMD>TmuxNavigateRight<CR>")
+
+-- Neotree
+keymap.set("n", "<leader>te", "<cmd>Neotree toggle<cr>")
+keymap.set("n", "<leader>tf", "<cmd>Neotree focus<cr>")
+keymap.set("n", "<leader>tq", "<cmd>Neotree close<cr>")
