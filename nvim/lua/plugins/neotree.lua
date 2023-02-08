@@ -5,8 +5,7 @@ return {
       window = {
         mappings = {
           ["<tab>"] = {
-            "toggle_node",
-            nowait = false,
+            "open",
           },
         },
       },
