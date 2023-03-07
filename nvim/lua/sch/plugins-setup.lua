@@ -34,7 +34,7 @@ return packer.startup(function(use)
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
   use({ "uloco/bluloco.nvim", requires = { "rktjmp/lush.nvim" } })
-  use("xiyaowong/nvim-transparent")
+  -- use("xiyaowong/nvim-transparent")
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -104,6 +104,7 @@ return packer.startup(function(use)
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  use("kdheepak/lazygit.nvim") -- lazygit plugin
 
   -- etc
   use("lukas-reineke/indent-blankline.nvim") -- indent guides
