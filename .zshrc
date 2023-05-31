@@ -56,6 +56,8 @@ alias lt='ls --tree'
 alias vim='nvim'
 alias vi='vim'
 alias vimdiff='nvim -d'
+
+# path export
 export EDITOR=/usr/local/bin/nvim
 
 # tmux command
