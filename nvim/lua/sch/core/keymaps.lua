@@ -17,13 +17,10 @@ keymap.set("n", "<leader>nh", "<cmd>nohl<CR>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
--- insert mode settings
-keymap.set("i", "<C-s>", "<C-c>:w<CR>")
-
 -- normal mode settings
-keymap.set("n", "<leader>q", "^") -- move to the strting point to the sentence
-keymap.set("n", "<leader>w", "$") -- move to the end point to the sentence
 keymap.set("n", "<leader>a", "gg^vG$") -- select all
+keymap.set("n", "<leader>[", "^") -- move to the strting point to the sentence
+keymap.set("n", "<leader>]", "$") -- move to the end point to the sentence
 
 -- surround keymap
 
