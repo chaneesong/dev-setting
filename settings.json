@@ -1,0 +1,161 @@
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"]
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"]
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.codeLens.symbolScopes": ["!Module"],
+    "editor.wordBasedSuggestions": false,
+    "editor.formatOnType": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  "[markdown]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    },
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.3)",
+    "rgba(127,255,127,0.3)",
+    "rgba(255,127,255,0.3)",
+    "rgba(79,236,236,0.3)"
+  ],
+  "indentRainbow.ignoreErrorLanguages": ["*"],
+  "workbench.colorCustomizations": {
+    // 상단 타이틀바 글자
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveForeground": "#ffffff",
+    // 상단 타이틀바 배경색
+    "titleBar.activeBackground": "#364984",
+    "titleBar.inactiveBackground": "#282c34"
+  },
+  "editor.fontFamily": "'MesloLGM Nerd Font Mono', Menlo",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#008000"
+    },
+    {
+      "column": 120,
+      "color": "#800000"
+    }
+  ],
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "explorer.confirmDragAndDrop": false,
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "redhat.telemetry.enabled": true,
+  "output.smartScroll.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  "files.associations": {
+    ".env": "dotenv"
+  },
+  "multiCommand.commands": [
+    {
+      "command": "startLazygit",
+      "sequence": [
+        "workbench.action.terminal.new",
+        "terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "lazygit\n",
+            "delay": 100
+          }
+        },
+        {
+          "command": "workbench.action.toggleMaximizedPanel"
+        }
+      ],
+      "when": "!panelMaximized"
+    },
+    {
+      "command": "killMaximizedPanelTerminalSession",
+      "sequence": [
+        {
+          "command": "workbench.action.toggleMaximizedPanel",
+          "when": "panelMaximized"
+        },
+        "workbench.action.terminal.kill",
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    }
+  ],
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.external.osxExec": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Bluloco Dark",
+  "indentRainbow.indicatorStyle": "light",
+  "terminal.integrated.minimumContrastRatio": 1,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "workbench.startupEditor": "none",
+  "search.exclude": {
+    "yarn.lock": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.tabSize": 2,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
