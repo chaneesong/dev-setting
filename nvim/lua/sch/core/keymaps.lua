@@ -25,8 +25,8 @@ keymap.set("n", "<leader>]", "$") -- move to the end point to the sentence
 -- surround keymap
 
 -- visual mode settings
-keymap.set("v", "<leader>q", "^")
-keymap.set("v", "<leader>w", "$")
+keymap.set("v", "<leader>[", "^")
+keymap.set("v", "<leader>]", "$")
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
@@ -41,8 +41,8 @@ keymap.set("n", "<leader>sm", "<cmd>MaximizerToggle<CR>") -- toggle split window
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>BufferLineCloseRight<CR>") -- close current tab
-keymap.set("n", "<leader>tn", "<cmd>BufferLineCycleNext<CR>") --  go to next tab
-keymap.set("n", "<leader>tp", "<cmd>BufferLineCyclePrev<CR>") --  go to previous tab
+keymap.set("n", "<leader>tl", "<cmd>BufferLineCycleNext<CR>") --  go to next tab
+keymap.set("n", "<leader>th", "<cmd>BufferLineCyclePrev<CR>") --  go to previous tab
 
 ----------------------
 -- Plugin Keybinds

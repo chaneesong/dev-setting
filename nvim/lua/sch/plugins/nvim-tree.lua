@@ -18,19 +18,14 @@ nvimtree.setup({
     icons = {
       glyphs = {
         folder = {
-          arrow_closed = "", -- arrow when folder is closed
-          arrow_open = "", -- arrow when folder is open
+          arrow_closed = "▶", -- arrow when folder is closed
+          arrow_open = "▼", -- arrow when folder is open
         },
       },
     },
   },
   view = {
-    width = 30,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
-    },
+    width = 40,
   },
   -- disable window_picker for
   -- explorer to work well with
