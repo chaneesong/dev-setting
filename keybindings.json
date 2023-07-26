@@ -2,7 +2,7 @@
 
 [
   {
-    "key": "cmd+ctrl+m",
+    "key": "ctrl+m",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
@@ -271,5 +271,143 @@
   {
     "key": "ctrl+p ctrl+c",
     "command": "editor.action.peekDeclaration"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "cursorRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "cmd+m cmd+i",
+    "command": "-editor.emmet.action.balanceIn",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+o",
+    "command": "-editor.emmet.action.balanceOut",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+down",
+    "command": "-editor.emmet.action.decrementNumberByOne"
+  },
+  {
+    "key": "cmd+m cmd+=",
+    "command": "-editor.emmet.action.evaluateMathExpression",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+m",
+    "command": "-editor.emmet.action.matchTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+k",
+    "command": "-editor.emmet.action.nextEditPoint",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+j",
+    "command": "-editor.emmet.action.prevEditPoint",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+up",
+    "command": "-editor.emmet.action.incrementNumberByOne"
+  },
+  {
+    "key": "cmd+m shift+cmd+m",
+    "command": "-editor.emmet.action.mergeLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+r",
+    "command": "-editor.emmet.action.reflectCSSValue",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+backspace",
+    "command": "-editor.emmet.action.removeTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+.",
+    "command": "-editor.emmet.action.selectNextItem",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+,",
+    "command": "-editor.emmet.action.selectPrevItem",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+s",
+    "command": "-editor.emmet.action.splitJoinTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+/",
+    "command": "-editor.emmet.action.toggleComment",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+u",
+    "command": "-editor.emmet.action.updateImageSize",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+t",
+    "command": "-editor.emmet.action.updateTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+w",
+    "command": "-editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "cmd+m cmd+c",
+    "command": "-workbench.action.showEmmetCommands",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+l",
+    "command": "-editor.emmet.action.wrapIndividualLinesWithAbbreviation",
+    "when": "editorTextFocus"
   }
 ]
