@@ -1,4 +1,9 @@
 {
+  "json.schemaDownload.enable": true,
+  "workbench.colorTheme": "Bluloco Dark",
+  "editor.tabSize": 2,
+  "editor.fontWeight": "bold",
+  "terminal.integrated.fontWeight": "bold",
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -50,7 +55,7 @@
       "strings": "off"
     }
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "indentRainbow.colors": [
     "rgba(255,255,64,0.3)",
     "rgba(127,255,127,0.3)",
@@ -133,7 +138,6 @@
       ]
     }
   ],
-  "window.titleBarStyle": "native",
   "apc.electron": {
       "titleBarStyle": "hiddenInset"
   },
@@ -158,7 +162,7 @@
       ".monaco-workbench .part.statusbar>.items-container>.statusbar-item.left.first-visible-item": "padding-left: 0;",
       // Show the host button, and make it as wide as the .activitybar.
       ".statusbar #status\\.host": "display: block !important; width: calc(var(--activity-bar-action-size) - 1px); background: [#555](https://github.com/lehni/vscode-titlebar-less-macos/issues/555) !important;",
-      ".statusbar #status\\.host .codicon": "margin: 0 auto;",
+      ".statusbar #status\\.host .codicon": "margin: 0 auto;"
   },
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.external.osxExec": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
@@ -179,14 +183,12 @@
   },
   "editor.accessibilitySupport": "off",
   "liveServer.settings.donotShowInfoMsg": true,
-  "editor.tabSize": 2,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.fontWeight": "bold",
-  "terminal.integrated.fontWeight": "bold",
-  "npm.keybindingsChangedWarningShown": true,
   "console-ninja.showWhatsNew": false,
-  "workbench.colorTheme": "Bluloco Dark"
+  "markdownlint.config": {
+    "MD024": false
+  }
 }
