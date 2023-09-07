@@ -140,7 +140,7 @@
     "command": "git-graph.view"
   },
   {
-    "key": "ctrl+l ctrl+l",
+    "key": "ctrl+g ctrl+k",
     "command": "extension.multiCommand.execute",
     "args": {
       "command": "startLazygit" 
@@ -459,5 +459,13 @@
     "key": "alt+f8",
     "command": "-editor.action.marker.next",
     "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+g ctrl+l",
+    "command": "startLazygit"
+  },
+  {
+    "key": "ctrl+m ctrl+k",
+    "command": "killMaximizedPanelTerminalSession"
   }
 ]
