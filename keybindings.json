@@ -2,7 +2,7 @@
 
 [
   {
-    "key": "ctrl+m",
+    "key": "ctrl+t ctrl+m",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
@@ -11,7 +11,7 @@
     "when": "sideBarFocus"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+n",
     "command": "list.focusUp",
     "when": "sideBarFocus"
   },
@@ -86,17 +86,12 @@
     "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+m",
-    "command": "cursorUp",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+p",
     "command": "-cursorUp",
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+m",
+    "key": "ctrl+k",
     "command": "list.focusUp",
     "when": "listFocus && !inputFocus"
   },
@@ -293,7 +288,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+j",
     "command": "list.focusDown",
     "when": "listFocus && !inputFocus"
   },
@@ -465,7 +460,27 @@
     "command": "startLazygit"
   },
   {
-    "key": "ctrl+m ctrl+k",
+    "key": "ctrl+t ctrl+k",
     "command": "killMaximizedPanelTerminalSession"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-editor.action.transposeLetters",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   }
 ]
