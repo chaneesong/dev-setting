@@ -269,26 +269,6 @@
   },
   {
     "key": "ctrl+j",
-    "command": "cursorDown",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "cursorUp",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "cursorLeft",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "cursorRight",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+j",
     "command": "list.focusDown",
     "when": "listFocus && !inputFocus"
   },
@@ -460,7 +440,7 @@
     "command": "startLazygit"
   },
   {
-    "key": "ctrl+t ctrl+k",
+    "key": "ctrl+g ctrl+k",
     "command": "killMaximizedPanelTerminalSession"
   },
   {

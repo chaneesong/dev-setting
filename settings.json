@@ -1,6 +1,5 @@
 {
   "json.schemaDownload.enable": true,
-  "workbench.colorTheme": "Bluloco Dark",
   "editor.tabSize": 2,
   "editor.fontWeight": "bold",
   "terminal.integrated.fontWeight": "bold",
@@ -192,5 +191,11 @@
     "MD024": false
   },
   "vsicons.dontShowNewVersionMessage": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "console-ninja.featureSet": "Community",
+  "workbench.colorTheme": "Bluloco Dark",
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "/Users/sch/.vimrc",
+  "vim.leader": " ",
+  "editor.lineNumbers": "relative",
 }

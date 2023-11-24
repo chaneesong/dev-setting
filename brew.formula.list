@@ -8,6 +8,7 @@ ca-certificates
 cmatrix
 coreutils
 fd
+fswatch
 fzf
 gettext
 gh
@@ -19,6 +20,8 @@ lazygit
 libcbor
 libevent
 libfido2
+libgit2
+libssh2
 libtermkey
 libtool
 libuv
@@ -38,6 +41,7 @@ oniguruma
 openssl@1.1
 openssl@3
 pcre2
+pnpm
 protobuf@21
 python@3.11
 readline
