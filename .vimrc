@@ -1,9 +1,14 @@
 " set leader key to space
 let mapleader = "\<Space>"
 
-" use jk to exit insert mode
+" use jk to exit mode
 inoremap jk <ESC>l
 inoremap kj <ESC>l
+vnoremap jk <ESC>
+vnoremap kj <ESC>
+cnoremap jk <ESC>
+cnoremap kj <ESC>
+inoremap <C-[> <ESC>l
 
 " clear search highlights
 nnoremap <leader>nh :nohl<CR>
